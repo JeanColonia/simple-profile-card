@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  background-color: rgb(27, 161, 173);
+  color: rgb(51, 50, 64);
+}
+
+htmL::after,
+html::before {
+  content: "";
+  width: 400px;
+  height: 400px;
+
+  display: block;
+  position: fixed;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+html::after {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(40, 184, 192),
+    transparent
+  );
+  bottom: -150px;
+  right: -220px;
+}
+
+html::before {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(40, 184, 192),
+    transparent
+  );
+  top: -200px;
+  left: -180px;
+}
+body {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.card {
+  display: block;
+  background-color: #fff;
+  margin: auto;
+  width: 300px;
+  z-index: 3;
+  border-radius: 11px;
+  font-family: "Kumbh Sans", sans-serif;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: auto;
+}
+
+.header {
+  height: 120px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(51, 50, 64, 0.4);
+}
+.card-content {
+  text-align: center;
+  position: relative;
+  height: 150px;
+}
+.card-content div {
+  position: absolute;
+  top: 75px;
+  left: 28%;
+  font-size: 18px;
+}
+
+.card-content span {
+  font-weight: 400;
+  padding-left: 4px;
+}
+.card-content p {
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.card-content img {
+  width: 130px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  border: 8px solid white;
+}
+
+.footer {
+  display: flex;
+
+  justify-content: space-evenly;
+  height: 80px;
+  border-top: 1px solid rgb(51, 50, 64, 0.4);
+}
+
+.footer-1,
+.footer-2,
+.footer-3 {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.user-social-data {
+  font-size: 18px;
+  font-weight: 700;
+}
+.info-name {
+  font-size: 10px;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 540px) {
+  htmL::after,
+  html::before {
+    width: 425px;
+    height: 425px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  htmL::after,
+  html::before {
+    width: 500px;
+    height: 500px;
+  }
+  html::after {
+    bottom: -250px;
+    right: -250px;
+  }
+
+  html::before {
+    top: -250px;
+    left: -250px;
+  }
+}
+
+@media screen and (min-width: 940px) {
+  htmL::after,
+  html::before {
+    width: 600px;
+    height: 600px;
+  }
+  html::after {
+    bottom: -350px;
+    right: -250px;
+  }
+
+  html::before {
+    top: -350px;
+    left: -250px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  htmL::after,
+  html::before {
+    width: 700px;
+    height: 700px;
+  }
+  html::after {
+    bottom: -350px;
+    right: -250px;
+  }
+
+  html::before {
+    top: -350px;
+    left: -250px;
+  }
+}
